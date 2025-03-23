@@ -1,0 +1,12 @@
+numpy 
+pandas 
+nltk 
+spacy 
+scikit-learn 
+pdfminer.six 
+fuzzywuzzy 
+Flask
+Flask-CORS
+mysql-connector-python
+python-dotenv
+python-docx

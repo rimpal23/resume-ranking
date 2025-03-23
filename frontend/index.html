@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Resume Ranking System</title>
+        <link rel = "stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
+    <body>
+        <div class = "container">
+            <h1><u>Resume Ranking App</u></h1>
+            <p>Welcome! Enter a job description and upload resumes and  to rank them based on relevance. The similarity score ranges from 0 to 1, where a higher score indicates a better match with the job description.</p>
+            <form id = "form" enctype="multipart/form-data">
+              <div class = "input">
+                <label for="jobdesc" name="jobdesc">Job Description (Text)</label>
+                <textarea id = "jobdesc" name="jobdesc" required></textarea>
+              </div>
+
+              <div class = "input">
+                <label for = "resumes">Upload Resumes (pdf or docx)</label>
+                <input type = "file" id="resumes" name="resumes" accept=".pdf,.docx" multiple required>
+                <ul id="files"></ul>
+              </div>
+
+              <button type="button" id="rankButton">Rank Resumes</button>
+              <button type="button" id="resetButton">Reset form</button>
+              <div id = "spinner" style="display: none;">Ranking Resumes.....</div>
+            </form>
+
+
+            <h2 id = "heading" style="display: none;"><u>Ranked Resume Results</u></h2>
+            <table id="results" style="display: none;">
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Resume</th>
+                        <th>Similarity Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        <h2 id ="bar" style="display:none;">Bar Chart</h2>
+        <canvas id = "chart"></canvas>
+        </div>
+        <script src ="script.js"></script>
+    </body>
+</html>

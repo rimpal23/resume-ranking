@@ -1,0 +1,85 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color:blanchedalmond;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 80%;
+    margin:50px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 4px 4px 10px;
+}
+h1{
+    text-align: center;
+    color:cadetblue;
+    font-style:oblique;
+    font-family:'Times New Roman', Times, serif;
+    background-color:lightblue;
+}
+h2{
+    color:blueviolet;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+p{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 17px;
+    color:cornflowerblue;
+}
+.input{
+    margin-bottom: 20px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    color:darksalmon;
+}
+input[type="file"]{
+    display: block;
+    margin-top: 10px;
+    color:crimson;
+    font-size: 15px;
+}
+textarea{
+    height: 200px;
+    width: 100%;
+    padding: 0px;
+    font-size: 15px;
+    border-radius: 6px;
+    border: 2px solid darkolivegreen;
+}
+button{
+    background-color:skyblue;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+button:hover{
+background-color: lightsalmon;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+table,th,td{
+    border: 2px solid slateblue;
+}
+th,td{
+    padding: 10px;
+    text-align: center;
+}
+th{
+    background-color:lightcoral;
+}
+#bar{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    color:chocolate;
+}
